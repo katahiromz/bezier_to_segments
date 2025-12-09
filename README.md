@@ -19,10 +19,10 @@ JavaScriptでベジエ曲線を線分に分解します。
  * @param {number} cp2y 制御点2のy座標
  * @param {number} x3 終点のx座標
  * @param {number} y3 終点のy座標
- * @param {number} segments 分割数（線分の数）
+ * @param {number} [segments=32] 分割数（線分の数）
  * @returns {Array<{x: number, y: number}>} 線分に分解された点の配列
  */
-const getBezierSegments = (x0, y0, cp1x, cp1y, cp2x, cp2y, x3, y3, segments = 50) => {
+const getBezierSegments = (x0, y0, cp1x, cp1y, cp2x, cp2y, x3, y3, segments = 32) => {
     // 分割数が1未満の場合はエラーを防ぐために最低1に設定
     if (segments < 1) segments = 1;
 
