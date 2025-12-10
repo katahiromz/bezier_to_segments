@@ -11,7 +11,7 @@ JavaScriptでベジエ曲線を線分に分解します。
 ```js
 /**
  * 3次ベジェ曲線を線分に分解した座標の配列を取得します。
- * * @param {number} x0 始点のx座標
+ * @param {number} x0 始点のx座標
  * @param {number} y0 始点のy座標
  * @param {number} cp1x 制御点1のx座標
  * @param {number} cp1y 制御点1のy座標
